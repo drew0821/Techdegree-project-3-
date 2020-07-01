@@ -11,15 +11,15 @@
 <body>
     <header>
         <h1 class="header-font top">The Code Review</h1>
-        <div class="sign-up">
+        <div class="sign-up width-stop">
             <h2 class="header-font">Signup for our newsletter</h2>
-            <p class="label-text">Get the latest news on how your code is doing right in your inbox</p>
+            <p class="discription-text">Get the latest news on how your code is doing right in your inbox</p>
         </div>
     </header>
     <main>
-        <fieldset class="contact-information">
-
-            <form action="index.html" method="post">
+        
+        <form action="index.html" method="post">
+            <fieldset>
                 <h1 class="header-font">Contact Information</h1>
                 <div class="flex-container">
                     <label class="label-text" for="name"> Full Name</label>
@@ -105,41 +105,41 @@
             <fieldset>
                 <section class="newsletter">
                     <legend class="header-font">Newsletter</legend>
-                    <p class="label-text">Select the newsletters you would like to recieve</p>
-                    <div>
-                        <input type="checkbox" id="html" value="html" name="user_html">
+                    <p class="discription-text">Select the newsletters you would like to recieve</p>
+                    <div class="container">
+                        <input class="checkbox" type="checkbox" id="html" value="html" name="code"><span class="checkmark"></span>
                         <label class="label-text" for="html">HTML News</label>
                     </div>
-                    <div>
-                        <input type="checkbox" id="css" value="css" name="user_css">
+                    <div class="container">
+                        <input class="checkbox" type="checkbox" id="css" value="css" name="code"><span class="checkmark"></span>
                         <label class="label-text" for="css">CSS News</label>
                     </div>
-                    <div>
-                        <input type="checkbox" id="javascript" value="user_javascript" name="user_javascript">
+                    <div class="container">
+                        <input class="checkbox" type="checkbox" id="javascript" value="user_javascript" name="code"><span class="checkmark"></span>
                         <label class="label-text" for="javascript">Javascript News</label>
                     </div>
                 </section>
                 <section class="newsletter-2">
-                    <p class="label-text">Newsletter format</p>
-                    <div>
+                    <p class="discription-text">Newsletter format</p>
+                    <div class="container-1">
                         <input type="radio" id="html-text" value="text_html"
-                        name="user_text_html">
+                        name="format"><span class="checkmark-1"></span>
                         <label for="html-text" class="label-text">HTML</label>
                     </div>
-                    <div>
-                        <input type="radio" id="plain_text" value="user_text" value="user_plain_text">
+                    <div class="container-1">
+                        <input type="radio" id="plain_text" value="user_text" name="format"><span class="checkmark-1"></span>
                         <label class="label-text" for="plain_text">Plain Text</label>
                     </div>
                 </section>           
                 <section class="newsletter">
-                    <label class="label-text" for="extra_topics">Other topics you would like to hear about</label>
-                    <textarea class="placeholder-text" id="extra_topics" placeholder="Type Here"></textarea>
+                    <label class="label-text hover" for="extra_topics">Other topics you would like to hear about</label>
+                    <textarea class="placeholder-text" id="extra_topics" name="extra_topics" placeholder="Type Here"></textarea>
                 </section>
             </fieldset>
-            <button class="btn" type="submit">Sign Up</button>
+            <button class="btn hover" type="submit">Sign Up</button>
         </form>
     </main>
-    <footer>
+    <footer class="width-stop">
         <p class="copy-text">Copyright The Code Review </p>
     </footer>
 </body>

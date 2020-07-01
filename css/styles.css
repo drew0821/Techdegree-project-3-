@@ -5,6 +5,9 @@ html elements
 font-family: 'Fredoka One', cursive;
 font-family: 'Open Sans', sans-serif;
 */
+body {
+    background-color: #C8D4DE;
+}
 header {
     display: flex;
     flex-direction: column;
@@ -13,19 +16,28 @@ header {
     height: 30vh;
     margin-bottom: 5px;
 }
+.zip-input:focus,
+textarea:focus,
+.input-box:focus {
+    border: solid  #00BF6E 5px;
+    background-color: #668DBF;
+}
 main {
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;   
 }
 footer{
     display: flex;
     justify-content: center;
 }
 textarea {
+    background-color: #B6C1D1;
     width: 100%;
     height: 100%;
+    border-radius: 15px;
 }
 .contact-information {
     display: flex;
@@ -39,8 +51,8 @@ form {
 }
 .header-font {
     font-family: 'Fredoka One', cursive;
-    font-size: 25px;
-    color: #B6C1D1;
+    font-size: 35px;
+    color: #668DBF;
 }
 .top {
     display: flex;
@@ -48,8 +60,7 @@ form {
     align-items: center;
     width: 100vw;
     height: 10vh;
-    background-color: #00BF6E;
-    color: white;
+    background-color: #00BF6E;  
 }
 
 .sign-up {
@@ -65,7 +76,7 @@ form {
 }
 .label-text {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     color: #00BF6E;
     margin-bottom: 10px; 
 }
@@ -75,8 +86,8 @@ form {
     margin: 40px 0px;
 }
 .input-box {
-    width: 90vw;
-    height: 8vh;
+    width: 70vw;
+    height: 6vh;
     background-color: #B6C1D1;
     border: none;
     border-radius: 15px;
@@ -85,7 +96,7 @@ form {
 }
 .zip-input {
     width: 45vw;
-    height: 8vh;
+    height: 6vh;
     background-color: #B6C1D1;
     border: none;
     border-radius: 15px;
@@ -93,7 +104,7 @@ form {
 }
 .zip {
     border-bottom: #00BF6E solid 4px;
-    height: 20vh;
+    padding-bottom: 60px;
 }
 input::placeholder {
     text-align: right;
@@ -105,7 +116,7 @@ input::placeholder {
     justify-content: space-around;
     align-items: flex-start;
     width: 90vw;
-    height: 35vh;
+    height: 25vh;
     margin-bottom: 20px;
 }
 .newsletter-2 {
@@ -122,7 +133,7 @@ input::placeholder {
     width: 90vw;
     height: 8vh;
     background-color: #00BF6E;
-    color: white;
+    color: #668DBF;
     font-size: 30px;
     font-family: 'Fredoka One', cursive;
     border: none;
@@ -135,9 +146,138 @@ input::placeholder {
     width: 90vw;
     height: 10vh;
     font-family: 'Open Sans', sans-serif;
-    color: #B6C1D1;
+    color: darkgray;
 }
 .placeholder-text {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+}
+.label-text:hover {
+    font-size: 30px;
+}
+.discription-text {
+    color: #668DBF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+/* checkbox styling */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* radio styling */
+  .container-1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container-1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  /* On mouse-over, add a grey background color */
+.container-1:hover input ~ .checkmark-1 {
+    background-color: #ccc;
+  }
+  /* When the radio button is checked, add a blue background */
+.container-1 input:checked ~ .checkmark-1 {
+    background-color: #2196F3;
+  }
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark-1:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  /* Show the indicator (dot/circle) when checked */
+.container-1 input:checked ~ .checkmark-1:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container-1 .checkmark-1:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+
+@media(min-width: 768px) {
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
 }
