@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>Treehouse-form</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-font top">The Code Review</h1>
+        <div class="sign-up">
+            <h2 class="header-font">Signup for our newsletter</h2>
+            <p class="label-text">Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+    </header>
+    <main>
+        <fieldset class="contact-information">
+
+            <form action="index.html" method="post">
+                <h1 class="header-font">Contact Information</h1>
+                <div class="flex-container">
+                    <label class="label-text" for="name"> Full Name</label>
+                    <input class="input-box placeholder-text" type="text" id="name" name="user_name" placeholder="Required">
+                </div>
+                <div class="flex-container">
+                    <label class="label-text" for="mail" >Email Address</label>
+                    <input class="input-box placeholder-text" type="text" id="mail" name="user_email" placeholder="Required">
+                </div>
+                <div class="flex-container">
+                    <label class="label-text" for="phone" >Phone Number</label>
+                    <input class="input-box placeholder-text" type="tel" id="phone" name="user_number" placeholder="Optional">
+                </div>
+                <div class="flex-container">
+                    <label class="label-text" for="address">Street Address</label>
+                    <input class="input-box placeholder-text" type="text" id="address" name="user_address" placeholder="Optional">
+                </div>
+                <div class="flex-container">
+                    <label class="label-text" for="city">City</label>
+                    <input class="input-box placeholder-text" type="text" id="city" name="user_city" placeholder="Optional">
+                </div>
+                <div class="flex-container">
+                    <label class="label-text" for="state">State</label>
+                    
+                    <select class="input-box" id="state" name="user_state">  
+                        <option value="state">Alabama - AL</option>
+                        <option value="state">Alaska - AK</option>
+                        <option value="state">Arizona - AZ</option>
+                        <option value="state">Arkansas - AR</option>
+                        <option value="state">California - CA</option>
+                        <option value="state">Colorado - CO</option>
+                        <option value="state">Connecticut - CT</option>
+                        <option value="state">Delaware - DE</option>
+                        <option value="state">Florida - FL</option>
+                        <option value="state">Georgia - GA</option>
+                        <option value="state">Hawaii - HI</option>
+                        <option value="state">Idaho - ID</option>
+                        <option value="state">Illinois - IL</option>
+                        <option value="state">Indiana - IN</option>
+                        <option value="state">Iowa - IA</option>
+                        <option value="state">Kansas - KS</option>
+                        <option value="state">Kentucky - KY</option>
+                        <option value="state">Louisiana - LA</option>
+                        <option value="state">Maine - ME</option>
+                        <option value="state">Maryland - MD</option>
+                        <option value="state">Massachusetts - MA</option>
+                        <option value="state">Michigan - MI</option>
+                        <option value="state">Minnesota - MN</option>
+                        <option value="state">Mississippi - MS</option>
+                        <option value="state">Missouri - MO</option>
+                        <option value="state">Montana - MT</option>
+                        <option value="state">Nebraska - NE</option>
+                        <option value="state">Nevada - NV</option>
+                        <option value="state">New Hampshire - NH</option>
+                        <option value="state">New Jersey - NJ</option>
+                        <option value="state">New Mexico - NM</option>
+                        <option value="state">New York - NY</option>
+                        <option value="state">North Carolina - NC</option>
+                        <option value="state">North Dakota - ND</option>
+                        <option value="state">Ohio - OH</option>
+                        <option value="state">Oklahoma - OK</option>
+                        <option value="state">Oregon - OR</option>
+                        <option value="state">Pennsylvania - PA</option>
+                        <option value="state">Rhode Island - RI</option>
+                        <option value="state">South Carolina - SC</option>
+                        <option value="state">South Dakota - SD</option>
+                        <option value="state">Tennessee - TN</option>
+                        <option value="state">Texas - TX</option>
+                        <option value="state">Utah - UT</option>
+                        <option value="state">Vermont - VT</option>
+                        <option value="state">Virginia - VA</option>
+                        <option value="state">Washington - WA</option>
+                        <option value="state">West Virginia - WV</option>
+                        <option value="state">Wisconsin - WI</option>
+                        <option value="state">Wyoming - WY</option>
+                    </select>
+                </div>
+                <div class="flex-container zip">
+                    <label class="label-text" for="zip">Zip Code</label>
+                    <input class="zip-input placeholder-text" type="text" id="zip" name="user_city" placeholder="Optional">
+                </div>
+            </fieldset>
+            <fieldset>
+                <section class="newsletter">
+                    <legend class="header-font">Newsletter</legend>
+                    <p class="label-text">Select the newsletters you would like to recieve</p>
+                    <div>
+                        <input type="checkbox" id="html" value="html" name="user_html">
+                        <label class="label-text" for="html">HTML News</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="css" value="css" name="user_css">
+                        <label class="label-text" for="css">CSS News</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="javascript" value="user_javascript" name="user_javascript">
+                        <label class="label-text" for="javascript">Javascript News</label>
+                    </div>
+                </section>
+                <section class="newsletter-2">
+                    <p class="label-text">Newsletter format</p>
+                    <div>
+                        <input type="radio" id="html-text" value="text_html"
+                        name="user_text_html">
+                        <label for="html-text" class="label-text">HTML</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="plain_text" value="user_text" value="user_plain_text">
+                        <label class="label-text" for="plain_text">Plain Text</label>
+                    </div>
+                </section>           
+                <section class="newsletter">
+                    <label class="label-text" for="extra_topics">Other topics you would like to hear about</label>
+                    <textarea class="placeholder-text" id="extra_topics" placeholder="Type Here"></textarea>
+                </section>
+            </fieldset>
+            <button class="btn" type="submit">Sign Up</button>
+        </form>
+    </main>
+    <footer>
+        <p class="copy-text">Copyright The Code Review </p>
+    </footer>
+</body>
+</html>
