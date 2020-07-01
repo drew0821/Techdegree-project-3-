@@ -6,7 +6,7 @@ font-family: 'Fredoka One', cursive;
 font-family: 'Open Sans', sans-serif;
 */
 body {
-    background-color: #C8D4DE;
+    background-color: rgb(219,253,215);
 }
 header {
     display: flex;
@@ -16,11 +16,17 @@ header {
     height: 30vh;
     margin-bottom: 5px;
 }
+
 .zip-input:focus,
 textarea:focus,
 .input-box:focus {
     border: solid  #00BF6E 5px;
-    background-color: #668DBF;
+    background-color: white;
+    
+}
+textarea,
+input {
+  color: #668DBF;
 }
 main {
     height: auto;
@@ -34,7 +40,7 @@ footer{
     justify-content: center;
 }
 textarea {
-    background-color: #B6C1D1;
+    background-color: rgb(226,232,240);
     width: 100%;
     height: 100%;
     border-radius: 15px;
@@ -44,10 +50,12 @@ textarea {
     justify-content: center;
 }
 form {
-    padding-top: 20px;
+    
+    padding: 20px;
     width: 90vw;
     height: auto;
     border-top: #00BF6E solid 4px;
+    
 }
 .header-font {
     font-family: 'Fredoka One', cursive;
@@ -65,7 +73,6 @@ form {
 
 .sign-up {
     text-align: center;
-    width: 90vw;
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -88,7 +95,7 @@ form {
 .input-box {
     width: 70vw;
     height: 6vh;
-    background-color: #B6C1D1;
+    background-color: rgb(226,232,240);
     border: none;
     border-radius: 15px;
     margin-top: 10px;
@@ -97,7 +104,7 @@ form {
 .zip-input {
     width: 45vw;
     height: 6vh;
-    background-color: #B6C1D1;
+    background-color: rgb(226,232,240);
     border: none;
     border-radius: 15px;
     margin-top: 10px;
@@ -139,6 +146,13 @@ input::placeholder {
     border: none;
     border-radius: 15px;
 }
+.newsletter-2 {
+  height: 16vh;
+  margin-top: 20px, 0px, 20px;
+}
+.newsletter {
+  height: 30vh;
+}
 .copy-text {
     display: flex;
     justify-content: center;
@@ -156,12 +170,14 @@ input::placeholder {
     font-size: 30px;
 }
 .discription-text {
+    margin-bottom: 10px;
     color: #668DBF;
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
 }
 /* checkbox styling */
 .container {
+    margin-top: 10px;
     display: block;
     position: relative;
     padding-left: 35px;
@@ -173,13 +189,17 @@ input::placeholder {
     -ms-user-select: none;
     user-select: none;
   }
-  .container input {
+  .container input,
+.container-1 input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 0;
-    width: 0;
-  }
+    height: 35px;
+    width: 35px;
+    left: -10px;
+    top: -10px;
+    z-index: 1;
+}
   .checkmark {
     position: absolute;
     top: 0;
@@ -193,7 +213,7 @@ input::placeholder {
     background-color: #ccc;
   }
   .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #668DBF;
   }
   .checkmark:after {
     content: "";
@@ -227,13 +247,7 @@ input::placeholder {
     -ms-user-select: none;
     user-select: none;
   }
-  .container-1 input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
+
   .checkmark-1 {
     position: absolute;
     top: 0;
@@ -249,7 +263,7 @@ input::placeholder {
   }
   /* When the radio button is checked, add a blue background */
 .container-1 input:checked ~ .checkmark-1 {
-    background-color: #2196F3;
+    background-color: #668DBF;
   }
   /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark-1:after {
@@ -272,13 +286,41 @@ input::placeholder {
     background: white;
   }
 
-@media(min-width: 768px) {
-
+  @media(min-width: 768px) {
     .flex-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+      display: flex;
+      flex-direction: row;
+    }
+    .sign-up,
+    form {
+      width: unset;
+      max-width: 755px;
+      margin: auto;
     }
     
-}
+    .input-box,
+    .flex-container,
+    .newsletter,
+    .newsletter-2,
+    .placeholder-text,
+    .btn {
+      width: unset;
+    }
+    .placeholder-text,
+    .btn {
+      width: 100%;
+    }
+    .flex-container .label-text {
+      flex-basis: 30%;
+      padding: 0;
+      margin: auto 0;
+    }
+    .flex-container .input-box,
+    .zip-input {
+      flex-basis: 65%;
+      flex-grow: 1;
+    }
+    .zip-input {
+      max-width: 25%;
+    }
+  }
