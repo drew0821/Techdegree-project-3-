@@ -6,28 +6,26 @@ font-family: 'Fredoka One', cursive;
 font-family: 'Open Sans', sans-serif;
 */
 body {
-    background-color: rgb(219,253,215);
+    background-color: white;
 }
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 30vh;
+    height: 45vh;
     margin-bottom: 5px;
 }
 
 .zip-input:focus,
 textarea:focus,
 .input-box:focus {
-    border: solid  #00BF6E 5px;
-    background-color: white;
-    
+  border: 3px solid #00BF6E;
+  background: white;
+  transition: ease-in .2s;  
+ 
 }
-textarea,
-input {
-  color: #668DBF;
-}
+
 main {
     height: auto;
     display: flex;
@@ -41,16 +39,19 @@ footer{
 }
 textarea {
     background-color: rgb(226,232,240);
-    width: 100%;
-    height: 100%;
     border-radius: 15px;
+    color: #668DBF;
+    height: 567px;
+    width: 90vw;
 }
 .contact-information {
     display: flex;
     justify-content: center;
 }
 form {
-    
+    width: unset;
+    background-color: rgb(219,253,215);
+    max-width: 768px;
     padding: 20px;
     width: 90vw;
     height: auto;
@@ -59,7 +60,7 @@ form {
 }
 .header-font {
     font-family: 'Fredoka One', cursive;
-    font-size: 35px;
+    font-size: 30px;
     color: #668DBF;
 }
 .top {
@@ -67,13 +68,13 @@ form {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 10vh;
+    height: 12vh;
     background-color: #00BF6E;  
 }
 
 .sign-up {
     text-align: center;
-    height: 20vh;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +95,7 @@ form {
 }
 .input-box {
     width: 70vw;
-    height: 6vh;
+    height: 50px;
     background-color: rgb(226,232,240);
     border: none;
     border-radius: 15px;
@@ -103,7 +104,7 @@ form {
 }
 .zip-input {
     width: 45vw;
-    height: 6vh;
+    height: 50px;
     background-color: rgb(226,232,240);
     border: none;
     border-radius: 15px;
@@ -123,7 +124,7 @@ input::placeholder {
     justify-content: space-around;
     align-items: flex-start;
     width: 90vw;
-    height: 25vh;
+    height: 50vh;
     margin-bottom: 20px;
 }
 .newsletter-2 {
@@ -147,11 +148,8 @@ input::placeholder {
     border-radius: 15px;
 }
 .newsletter-2 {
-  height: 16vh;
+  height: 25vh;
   margin-top: 20px, 0px, 20px;
-}
-.newsletter {
-  height: 30vh;
 }
 .copy-text {
     display: flex;
@@ -164,7 +162,7 @@ input::placeholder {
 }
 .placeholder-text {
     font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
+    font-size: 15px;
 }
 .label-text:hover {
     font-size: 30px;
@@ -175,6 +173,14 @@ input::placeholder {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
 }
+h1  {
+  font-family: 'Fredoka One', cursive;
+    color: #668DBF;
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    font-size: 40px;
+}
+
 /* checkbox styling */
 .container {
     margin-top: 10px;
