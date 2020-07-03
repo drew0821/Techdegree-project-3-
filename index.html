@@ -20,14 +20,14 @@
         
         <form action="index.html" method="post">
             <fieldset>
-                <h2 class="header-font">Contact Information</h2>
+                <legend class="header-font">Contact Information</legend>
                 <div class="flex-container">
                     <label class="label-text" for="name"> Full Name</label>
-                    <input class="input-box placeholder-text" type="text" id="name" name="user_name" placeholder="Required">
+                    <input class="input-box placeholder-text" type="text" id="name" name="user_name" placeholder="Required" required>
                 </div>
                 <div class="flex-container">
                     <label class="label-text" for="mail" >Email Address</label>
-                    <input class="input-box placeholder-text" type="text" id="mail" name="user_email" placeholder="Required">
+                    <input class="input-box placeholder-text" type="text" id="mail" name="user_email" placeholder="Required" required>
                 </div>
                 <div class="flex-container">
                     <label class="label-text" for="phone" >Phone Number</label>
@@ -103,8 +103,8 @@
                 </div>
             </fieldset>
             <fieldset>
+                <legend class="header-font">Newsletter</legend>
                 <div class="newsletter">
-                    <legend class="header-font">Newsletter</legend>
                     <p class="discription-text">Select the newsletters you would like to recieve</p>
                     <div class="container">
                         <input class="checkbox" type="checkbox" id="html" value="html" name="code"><span class="checkmark"></span>
