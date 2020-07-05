@@ -312,7 +312,8 @@ h1  {
     .sign-up,
     form {
       width: unset;
-      max-width: 755px;
+      min-width: 650px;
+      max-width: 1000px;
       margin: auto;
     }
     
@@ -339,7 +340,7 @@ h1  {
       flex-grow: 1;
     }
     .zip-input {
-      max-width: 25%;
+      max-width: 45%;
     }
     
   textarea {
